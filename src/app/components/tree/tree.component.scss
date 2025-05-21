@@ -1,0 +1,70 @@
+.tree {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  padding: 15px;
+  border: 1px solid #E0E0E0;
+  border-radius: 15px;
+  width: 400px;
+  position: relative;
+  box-sizing: border-box;
+  &::before {
+    content: "";
+    position: absolute;
+    display: none;
+    top: 88px;
+    left: 4px;
+    width: 25px;
+    height: 2px;
+    background: #E0E0E0;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    display: none;
+    width: 2px;
+    height: 35px;
+    top: 54px;
+    left: 4px;
+    background: #E0E0E0;
+  }
+  &-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  &-id {
+    border: 1px solid #E0E0E0;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+  }
+  &-arrow {
+    width: 25px;
+    height: 25px;
+    transition: all .3s ease;
+    &-icon {
+      fill: black;
+    }
+  }
+  &-children {
+    width: 100%;
+    padding-left: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+.is-delete {
+  background-color: #E6E6E6;
+}
+
+.tree.active::before,
+.tree.active::after {
+  display: block;
+}
+
