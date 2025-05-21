@@ -6,7 +6,6 @@ import {TreeComponent} from "./components/tree/tree.component";
 
 @Component({
   selector: 'app-root',
-  standalone: true,
   imports: [CommonModule, TreeComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

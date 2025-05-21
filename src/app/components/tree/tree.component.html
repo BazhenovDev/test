@@ -11,6 +11,6 @@
     </svg>
   </button>
 </div>
-<div class="tree-children" *ngIf="tree.children?.length && showChildren">
+<div class="tree-children" *ngIf="tree.children && showChildren">
   <tree-component *ngFor="let child of tree.children" [tree]="child"></tree-component>
 </div>

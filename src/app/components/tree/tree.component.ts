@@ -4,7 +4,6 @@ import {CommonModule} from "@angular/common";
 
 @Component({
   selector: 'tree-component',
-  standalone: true,
   imports: [CommonModule],
   templateUrl: './tree.component.html',
   styleUrl: './tree.component.scss'
